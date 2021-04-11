@@ -37,30 +37,27 @@ for node in ans:
     print(node)
     
     
-####################################################################3
+####################################################################
 
 ### 무지 ###
 import sys
 
-T = int(sys.stdin.readline())
-# T개의 테스트 케이스
+T = int(sys.stdin.readline())                               # 테스트 케이스 개수
 for _ in range(T):
-    N = int(sys.stdin.readline())   # 트리의 노드 개수
+    N = int(sys.stdin.readline())                           # 트리의 노드 개수
     nodes = [0] * (N + 1)
     for _ in range(N - 1):
         parent, child = map(int, sys.stdin.readline().split())
         nodes[child] = parent
 
-    # 가장 가까운 공통 조상을 구할 두 노드
-    A, B = map(int, sys.stdin.readline().split())
-    # A와 B의 부도 list를 각각 구한다.
-    parent_of_A = [A]
+    A, B = map(int, sys.stdin.readline().split())           # 가장 가까운 공통 조상을 구할 두 노드
+    parent_of_A = [A]                                       # A와 B의 부모들의 list를 각각 구한다.
     parent_of_B = [B]
-    # 루트 노드가 나올 때까지 거꾸로 올라가면서 list에 추가
-    while nodes[A] != 0:
+    
+    while nodes[A] != 0:                                    # 루트 노드가 나올 때까지 거꾸로 올라가면서 list에 추가
         parent_of_A.append(nodes[A])
         A = nodes[A]
-    while nodes[B] != 0:
+    while nodes[B] != 0:                                    # B에 대해서도 마찬가지로 
         parent_of_B.append(nodes[B])
         B = nodes[B]
 

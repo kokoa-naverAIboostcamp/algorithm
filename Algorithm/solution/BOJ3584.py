@@ -35,3 +35,63 @@ for _ in range(T):                  # test case 만큼 실행
     
 for node in ans:
     print(node)
+    
+    
+####################################################################3
+
+### 무지 ###
+import sys
+
+T = int(sys.stdin.readline())
+# T개의 테스트 케이스
+for _ in range(T):
+    N = int(sys.stdin.readline())   # 트리의 노드 개수
+    nodes = [0] * (N + 1)
+    for _ in range(N - 1):
+        parent, child = map(int, sys.stdin.readline().split())
+        nodes[child] = parent
+
+    # 가장 가까운 공통 조상을 구할 두 노드
+    A, B = map(int, sys.stdin.readline().split())
+    # A와 B의 부도 list를 각각 구한다.
+    parent_of_A = [A]
+    parent_of_B = [B]
+    # 루트 노드가 나올 때까지 거꾸로 올라가면서 list에 추가
+    while nodes[A] != 0:
+        parent_of_A.append(nodes[A])
+        A = nodes[A]
+    while nodes[B] != 0:
+        parent_of_B.append(nodes[B])
+        B = nodes[B]
+
+    # 이제 A와 B의 가장 가까운 공통 조상을 구한다.
+    ## 방법 1 -> O(N^2) 완전탐색 방법
+    # for a in parent_of_A:
+    #     if a in parent_of_B:
+    #         print(a)
+    #         break
+
+    ## 방법 2 -> O(N^2) 완전탐색 방법 (1번과 달리 B의 부모 리스트는 역순으로 탐색)
+    # for a in parent_of_A:
+    #     flag = False
+    #     for b in parent_of_B[::-1]:
+    #         if a == b:
+    #             flag = True
+    #             break
+    #     if flag:
+    #         print(a)
+    #         break
+
+    ## 방법 3 -> 루트노드 부터 탐색 방법
+    # 파이썬은 인덱스가 -1로 내려가도 out of range 발생하지 않음
+    # 파이썬에서 -1은 마지막 원소 의미 -> 그래서 이런 에러가 찾기 힘들고
+    # 이를 방지하기 위해 zip으로 묶으면 좋다!
+    pre = 0
+    for a, b in zip(parent_of_A[::-1], parent_of_B[::-1]):
+        if a == b:
+            pre = a
+        else:
+            print(pre)
+            break
+    else:
+        print(pre)

@@ -36,7 +36,7 @@
 - [BOJ 1089번: 스타트링크 타워](./solution/BOJ1089.py)
 - [BOJ 1062번: 가르침](https://www.acmicpc.net/problem/1062)
 - [BOJ 5052번: 전화번호 목록](./solution/BOJ5052.py)
-- [BOJ 1701번: Cubeditor](https://www.acmicpc.net/problem/1701)
+- [BOJ 1701번: Cubeditor](./solution/BOJ1701.py)
 
 
 
@@ -55,5 +55,5 @@
 ### ✅ <span style='color:#006dd7'>이분 탐색</span>
 
 - [BOJ 13711번: LCS 4](./solution/BOJ13711.py)
-- [BOJ 2467번: 용액](https://www.acmicpc.net/problem/2467)
+- [BOJ 2467번: 용액](./solution/BOJ2467.py))
 - [BOJ 8983번: 사냥꾼](./solution/BOJ8983.py)

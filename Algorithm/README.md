@@ -56,4 +56,4 @@
 
 - [BOJ 13711번: LCS 4](./solution/BOJ13711.py)
 - [BOJ 2467번: 용액](https://www.acmicpc.net/problem/2467)
-- [BOJ 8983번: 사냥꾼](https://www.acmicpc.net/problem/8983)
+- [BOJ 8983번: 사냥꾼](./solution/BOJ8983.py)

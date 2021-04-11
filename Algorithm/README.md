@@ -35,7 +35,7 @@
 
 - [BOJ 1089번: 스타트링크 타워](./solution/BOJ1089.py)
 - [BOJ 1062번: 가르침](https://www.acmicpc.net/problem/1062)
-- [BOJ 5052번: 전화번호 목록](https://www.acmicpc.net/problem/5052)
+- [BOJ 5052번: 전화번호 목록](./solution/BOJ5052.py)
 - [BOJ 1701번: Cubeditor](https://www.acmicpc.net/problem/1701)
 
 

@@ -45,7 +45,7 @@
 ### ✅ <span style='color:#006dd7'>DP</span>
 
 - [BOJ 9252번: LCS 2](./solution/BOJ9252.py)
-- [BOJ 4811번: 알약](https://www.acmicpc.net/problem/4811)
+- [BOJ 4811번: 알약](./solution/BOJ4811.py)
 - [BOJ 2602번: 돌다리 건너기](https://www.acmicpc.net/problem/2602)
 
 

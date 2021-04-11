@@ -23,8 +23,8 @@
 ### ✅ <span style='color:#006dd7'>그래프</span>
 
 - [BOJ 11725번: 트리의 부모 찾기](./solution/BOJ11725.py)
-- [BOJ 1976번: 여행가자](https://www.acmicpc.net/problem/1976)
-- [BOJ 3584번: 가장 가까운 공통조상](https://www.acmicpc.net/problem/3584)
+- [BOJ 1976번: 여행가자](./solution/BOJ1976.py)
+- [BOJ 3584번: 가장 가까운 공통조상](./solution/BOJ3584.py)
 - [BOJ 2146번: 다리 만들기](https://www.acmicpc.net/problem/2146)
 
 

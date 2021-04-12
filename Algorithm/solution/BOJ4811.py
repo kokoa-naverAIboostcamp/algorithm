@@ -13,3 +13,21 @@ while True:
     if N == 0:
         break
     print(dp[N][N])
+
+
+# 4811번: 알약 (라이언)
+import sys
+
+dp=[[0 for j in range(31)] for i in range(31)]
+for j in range(31):
+    dp[0][j]=1
+for i in range(1,31):
+    for j in range(i,31):
+        dp[i][j]=dp[i-1][j]+dp[i][j-1]
+
+while True:
+    N=int(sys.stdin.readline())
+    if N==0:
+        break
+    else:
+        print(dp[N][N])

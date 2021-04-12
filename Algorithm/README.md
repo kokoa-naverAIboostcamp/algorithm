@@ -55,5 +55,5 @@
 ### ✅ <span style='color:#006dd7'>이분 탐색</span>
 
 - [BOJ 13711번: LCS 4](./solution/BOJ13711.py)
-- [BOJ 2467번: 용액](./solution/BOJ2467.py))
+- [BOJ 2467번: 용액](./solution/BOJ2467.py)
 - [BOJ 8983번: 사냥꾼](./solution/BOJ8983.py)

@@ -62,5 +62,5 @@
 
 ### ✅ <span style='color:#006dd7'>구현</span>
 
-- [BOJ 2045번: 마방진](./solution/BOJ13711.py)
+- [BOJ 2045번: 마방진](./solution/BOJ2045.py)
 

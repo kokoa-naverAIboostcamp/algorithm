@@ -37,6 +37,7 @@
 - [BOJ 1062번: 가르침](https://www.acmicpc.net/problem/1062)
 - [BOJ 5052번: 전화번호 목록](./solution/BOJ5052.py)
 - [BOJ 1701번: Cubeditor](./solution/BOJ1701.py)
+- [BOJ 6503번: 망가진 키보드](./solution/BOJ6503.py)
 
 
 
